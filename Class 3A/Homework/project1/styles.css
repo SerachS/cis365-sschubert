@@ -1,1 +1,15 @@
 /* Add your CSS style definitions to this file */
+body{
+    margin-top: 0em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 0em;
+}
+h1{
+    font-family: Roboto Slab;
+    font-size: 2rem;
+}
+blockquote{
+    font-family: Roboto Slab;
+    font-size: 1.25rem;
+}
