@@ -17,8 +17,8 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 0 20px 0;
-    padding-left: 150;
-    padding-top: 100;
+    padding-left: 150PX;
+    padding-top: 100PX;
 
 }
 header p {
@@ -49,5 +49,5 @@ main{
 div.box{
     display: inline-block;
     color:lavender;
-    
+
 }
