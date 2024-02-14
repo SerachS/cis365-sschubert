@@ -32,7 +32,7 @@ article{
     background-color: white;
     margin: 8px, 10px, 0px, 10px;
 }
-div{
+#details{
     color: #ececec;
     text-align: center;
 }
@@ -40,12 +40,14 @@ footer{
     background-color: #39293a;
     padding-top: 6px;
     padding-bottom: 6px;
+    margin-top: 2em;
 }
 footer p{
     color: white;
 }
 footer a{
     color: #9f2042;
+    text-decoration: none;
 }
 img{
     width: 100%;
@@ -53,4 +55,19 @@ img{
 article p{
     margin-left: 2em;
     margin-right: 2em;
+}
+div a:link{
+    border-radius: 4px;
+    padding: 12px;
+    color: #ec8295;
+    border:1pt solid #ececec;
+    border-radius: 5px;
+    text-align: left;
+    text-decoration:none;
+    margin-bottom: 1.5em;
+    
+}
+a:hover{
+    background-color: #a9a9ba;
+    color: #9f2042;
 }
