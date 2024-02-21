@@ -34,5 +34,5 @@ table#league td.team{
 }
 table#league td:nth-child(1),table#league th:nth-child(1){
    padding-left: 24px;
-   background-color: black;
+   /* background-color: black; */
 }

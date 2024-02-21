@@ -11,13 +11,22 @@ body {
 h1, h2, h3, nav, footer {
    font-weight: 500;
   }
+input[type=search] {
+   width: 300px;
+}
 
+input[type=submit], input[type=search], select {
+   height: 25px;
+}
+#fun{
+   width:90%;
+}
 
 legend {
    background-color: var(--color-primary-1-900) ;
    color: var(--color-primary-1-050);
    margin: 0 auto;
-   width: 90%;
+   width: 100%;
    padding: 0.25em;
    text-align: center;
    font-weight: 500;
@@ -32,29 +41,128 @@ fieldset {
 
 div#searchBox, div#settingsBox, div#paintingBox {
    background-color: var(--color-neutral-100);
+   margin: 0.25em auto;
+   padding: 1em;
+   border: 0;
+   width: 90%;
 
+}
+div#searchBox {margin-top: 1em;}
+
+div#searchBox input[type="search"], div#searchBox select, div#settingsBox select {
+   border: 0;
+   padding: 7px;
+   height: 36px;
+   border-radius: 4px;
+   margin-right: 5px;
+}
+
+div#searchBox input[type="radio"], div#paintingBox input[type="checkbox"]{
+   display: inline-block;
+   margin: 5px;
+   width: 20px;
+   height: 20px;
 }
 
 
 
 div#paintingBox { 
-
+   margin-top: 1em; 
    background-color: var(--color-neutral-100);
    }
 
-
+table {
+      border: collapse; 
+      border-spacing: 0;   
+      width: 100%;
+   }
+   
+table tbody td {
+      border-top: 1pt solid var(--color-neutral-200);   
+      line-height: 1.5em;
+      vertical-align: middle;
+      padding: 0.5em 0.75em;
+   }
+   
+table thead th {
+      text-align: left;
+      padding: 0.25em 0.75em; 
+      font-weight: 400;
+   }
 
 table thead {
    background-color: var(--color-primary-1-050) ;
+   margin: auto;
+   width: 100%;
+   text-align: center;
+}
+table tbody td:first-child  {
+   text-align: center;
+   padding: 0.5em 0em;   
 }
 
+td img.thumb {
+   padding:2px;
+   border: solid 1pt var(--color-neutral-300);
+   width: 100px;
+}
+
+td em {
+   font-style: italic;
+   font-weight: 300;
+   margin-right: 0px;
+}
 
 caption {
    background-color: var(--color-primary-1-800);
    color: var(--color-primary-1-050);
+   padding: 0.5em 0.5em; 
+   font-weight: 400;
+   font-size: 1.2em;
 
 }
 
+button, input[type="submit"] {
+   display: inline-block;
+   padding: 6px;
+   border: 0;
+   border-radius: 3px;
+   cursor: pointer;
+   height: 36px;
+}
 
+#editBtn {
+   background-color: #14919B;
+   border: solid 1px var(--color-primary-1-500);
+  
+}
+#deleteBtn{
+   background-color: var(--color-neutral-1-200);
+   border:solid 1px black;
+   
+   
+}
+#archiveBtn{
+   background-color: var(--color-neutral-1-200);
+   border:solid 1px black;
+   
+}
+.actionBtn {
+   background-color: var(--color-primary-1-600);
+   border: solid 1px var(--color-primary-1-800);
+   color: var(--color-primary-1-050);
+   margin-left: 5px;
+}
 
+.otherBtns {
+   border: solid 1px var(--color-neutral-300);
+}
+#filter {
+   background-color:#044E54;;
+   color: white;
+}
+.center{
+   width: 50%;
+   margin: auto;
+}
 
