@@ -74,7 +74,7 @@ div#paintingBox {
 table {
       border: collapse; 
       border-spacing: 0;   
-      width: 100%;
+      /* width: 100%; */
    }
    
 table tbody td {
