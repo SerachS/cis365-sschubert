@@ -16,6 +16,9 @@ header {
    padding: 0 var(--spacer-base);
    background-color: var(--color-back-dark);
    height: var(--header-height);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 
 }
 header h1 {
@@ -85,14 +88,17 @@ img {
 
 .cards {
     /* MISSING MORE PROPERTIES */
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .card {
     width: calc((100% / 4) - 1%);
 }
 
-img {
+.card img {
     max-width: 100%;
 }
 
@@ -110,10 +116,15 @@ img {
     transition-duration: 1s;
     transition-timing-function: ease-out;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* styles for mobile protrait screen
    add media query for screen and for a max-width of 480px */
-
+@media only screen and (max-width:480px){
 /* { */
     :root {
         --card-font-size: 100%;
@@ -121,13 +132,15 @@ img {
         --header-height: 4em;
     }
     .card {
-        /* add the missing property */
+        width:100%;
     }
+
+}
 /* } */
 
 /* styles for tablet portrait and mobile landscape screens
    add media query for screen and min-width of 481px and max-width of 786px*/
-
+@media only screen and (min-width:481px) and (max-width:786){
    /* { */
     :root {
         --card-font-size: 100%;
@@ -135,6 +148,8 @@ img {
     }
 
     .card {
-        /* add the missing property */
+        width:45%;
     }
+
 /* } */
+}
