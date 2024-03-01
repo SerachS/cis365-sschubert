@@ -9,9 +9,9 @@ let tip = ibill * TIP_PRECENTAGE;
 
 if (ibill && ibill != 0)
 {
-    console.log("For bill of $" + bill + " the tip should be $" + tip);
+    console.log("For bill of $" + bill + " the tip should be $" + tip);//concatenation
     //console.log(`For bill of $${bill} the tip should be $${tip}`);
 }
 else{
-    console.log(`${bill} is not a valid number`);
+    console.log(`${bill} is not a valid number`); //interpolation
 }
