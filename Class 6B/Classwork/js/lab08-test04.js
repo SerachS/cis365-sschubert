@@ -84,15 +84,31 @@ console.log('---------------------');
 
 // use two nested loops - outer: loop thru colors
 
-
+for (let c of colors)
+{
+   let sum = 0;
+   for (let rgb of c.rgb)
+   {
+      sum += rgb;
+   }
+   console.log(c.name + "rgb="+sum)
+}
 console.log('---------------------');
 
 /* use a loop output using document.write a unordered
    list of links to the galleries in the galleries array.
    Make the label of the link the name property, and the href
    the url property */
+document.write(`<h2>Hello World</h2>`);
+const firstItem = "First Item";
+document.write(`<li>${firstItem}</li>1`);
+document.write(`</ul>`);
 
-
+function foo(a=10,b=0)
+{
+   return a+b;
+}
+console.log(foo(3));
 
 
 
