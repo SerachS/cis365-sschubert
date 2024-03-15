@@ -67,7 +67,8 @@ function createButton()
 document.addEventListener('DOMContentLoaded',function(){
 
    const btn = document.getElementsByTagName("button");
-   btn[0].addEventListener("click", function(){
+   btn[0].addEventListener("click", function(e){
+      e.stopPropagation();
       console.log("use an anonymous function");
    });
 
@@ -76,7 +77,25 @@ document.addEventListener('DOMContentLoaded',function(){
       console.log(e.target.textContent);
       console.log(e);
       console.log("a diffrent approach but the same results")
-   });
+   });//end of querySelector
+
+   function logParent(e)
+   {
+      //e.stopPropagation();
+      console.log("The parent was clicked")
+      console.log(e.target)
+
+      if (e.target && e.target.nodeName == "IMG")
+      {
+         console.log("the image was clicked")
+         console.log(e.target)
+      }
+   }
+   document.getElementById("parent").addEventListener("click",logParent);
+
+   document.querySelector("#parent").addEventListener("click", function (e) {
+      
+   })
 
 });
 //add event logic
